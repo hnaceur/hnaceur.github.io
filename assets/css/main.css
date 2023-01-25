@@ -301,7 +301,38 @@ input, select, textarea {
 	}
 
 /* Form */
+	.onglet a {
+		outline: solid;
+		text-decoration: none;
+		display: inline-block;
+		width: 60%;/*20%*/
+		text-align: center;
+		line-height: 3;
+		color: white;
+		margin: 2%;
+	}
 
+	.onglet li {
+		list-style-type: none;
+		text-align: center;
+		/* display: inline; */
+	}
+
+	
+h3.projetspro {
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+li.projets {
+	padding-bottom: 5%;
+	padding-top:5%;
+}
+
+img.projets {
+	padding-top:2%;
+	width:100%;
+}
 	form {
 		margin: 0 0 2rem 0;
 	}
@@ -1140,9 +1171,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
