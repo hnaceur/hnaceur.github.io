@@ -1690,3 +1690,23 @@ img.projets {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+.video-container {
+	display: flex;
+	align-items: center;
+	}
+		  
+	.video-title {
+	margin-left: 10px;
+	}
+
+
+
+	.video-container {
+		display: flex;
+		align-items: center;
+	  }
+	  
+	  .video-title {
+		margin-left: 10px;
+	  }

@@ -19,9 +19,7 @@
 
 		<!-- Header -->
 		<header id="header">
-			<div class="logo">
-				<span class="icon fa-gem"></span>
-			</div>
+
 			<div class="content">
 				<div class="inner">
 					<h1>Bienvenue sur mon Portfolio !</h1>
@@ -74,10 +72,10 @@
 					- Technicien d'études informatiques<br>
 				</p>
 				<h3 class="major">L'option SISR</h3>
-				<p>L’acronyme SISR signifie « Solutions d’infrastructure, systèmes et réseaux ».<br>
-					Voici quelques indications sur cette seconde option du BTS SIO.
-					L’option SISR est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la
-					maintenance d’infrastructures réseaux. Assurer la sécurité, la maintenance et l’installation des
+				<p>L’acronyme SISR signifie « Solutions d’infrastructure, systèmes et réseaux ».<br>Voici quelques
+					indications sur cette seconde option du BTS SIO. L’option SISR est destinée aux étudiants qui
+					s’orientent vers les métiers liés à la conception et la maintenance d’infrastructures réseaux.
+					Assurer la sécurité, la maintenance et l’installation des
 					réseaux et des équipements informatiques font partie des principales missions des futurs
 					administrateurs, techniciens ou pilotes d’exploitation.
 					Des cours plus généraux viendront compléter la formation et apporter des compétences plus
@@ -103,76 +101,249 @@
 				<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 				<p> Enchantée! Je suis Hella NACEUR, agée de 20 ans.<br> Je travaille depuis 2 ans sur l'obtention de
 					mon <a href="#leBTS">BTS SIO option SLAM </a> au sein du Lycée Turgot ce situant à Paris dans le
-					3ème arrondissement.<br> C'est bien depuis des années que, j’ai été attirée par l’informatique et
+					3ème arrondissement.<br>J’ai vite été attirée par l’informatique et
 					les nouvelles technologies. C’est tout naturellement que je me suis tournée vers ces études. </p>
 
 				<form action="projets/cv.pdf" target="_blank">
 					<input class="read-me" type="submit" value="Mon C.V">
-					</form>
-				</article>
+				</form>
+			</article>
 
 
 
-			
+
 			<!-- Compétences -->
 			<article id="competences">
 				<h2 class="major">Compétences</h2>
-					<span class="image main"><img src="images/pic04.png" alt="" /></span>
-					<p></p>
-				<h3 class="major">Logiciels et outils</h3>
-					<p>vscode<br>putty<br>linux<br>photoshop<br>wordpress <br>aws<br>vm ware<br>git<br>wireshark <br>pack office<br>adobe xd <br></p>
-				<h3 class="major">Languages</h3>
-					<p>html <br>css <br>php (mvc,poo)<br>sql<br>python<br>javascript<br></p>
+				<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+				<style>
+					.skill {
+						display: inline-block;
+						margin: 2px;
+						width: 500px;
+						height: 15px;
+						background-color: #7E63B5;
+						border-radius: 10px;
+						position: relative;
+						overflow: hidden;
+					}
+
+					.skill span {
+						display: block;
+						height: 100%;
+						background-color: lightgray;
+						position: absolute;
+						left: 0;
+						top: 0;
+						animation: fillBar 1s ease-out;
+					}
+
+					@keyframes fillBar {
+						0% {
+							width: 0%;
+						}
+
+						100% {
+							width: 100%;
+						}
+					}
+				</style>
+
+				<div id="skills">
+					<div class="skill">
+						<span style="width: 70%;"></span>
+					</div> <br>
+					<p>HTML / CSS</p>
+					<div class="skill">
+						<span style="width: 50%;"></span>
+					</div> <br>
+					<p>PHP</p>
+					<div class="skill">
+						<span style="width: 30%;"></span>
+					</div> <br>
+					<p>JavaScript</p>
+					<div class="skill">
+						<span style="width: 40%;"></span>
+					</div> <br>
+					<p>Python</p>
+					<div class="skill">
+						<span style="width: 80%;"></span>
+					</div> <br>
+					<p>MySQL</p>
+					<div class="skill">
+						<span style="width: 40%;"></span>
+					</div> <br>
+					<p>Linux</p>
+				</div>
+				<script>
+					const skills = document.querySelectorAll(".skill");
+					let delay = 0;
+					skills.forEach(skill => {
+						const bar = skill.querySelector("span");
+						bar.style.animationDelay = delay + "s";
+						delay += 0.5;
+					});
+
+				</script>
 			</article>
+
 
 
 
 			<!-- Projets -->
 			<article id="projets">
 				<h2 class="major">Projets</h2>
-				<span class="image main"><img src="images/pic04.png" alt="" /></span>
-				<p>Sur cette page vous trouverez les projets que j'ai mené durant mon parcours informatique.</p>				
+				<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+				<p>Sur cette page vous trouverez les projets que j'ai mené durant mon parcours informatique.</p>
 				<h3 class="major">Mes rapports de stage</h3>
-					<p> Lors de mon BTS j'ai effectué deux stages, un pour chaques années.<br></p>
-					<form action="projets/rapport_de_stage1.pdf" target="_blank">
-						<input class="read-me" type="submit" value="Rapport de stage première année">
-						</form>
-					<form action="projets/rapport_de_stage2.pdf" target="_blank">
-						<input class="read-me" type="submit" value="Rapport de stage deuxième année">
-						</form>
+				<p> Lors de mon BTS j'ai effectué deux stages, un pour chaques années.<br></p>
+				<form action="projets/rapport_de_stage1.pdf" target="_blank">
+					<input class="read-me" type="submit" value="Rapport de stage première année">
+				</form>
+				<form action="projets/rapport_de_stage2.pdf" target="_blank">
+					<input class="read-me" type="submit" value="Rapport de stage deuxième année">
+				</form>
 				<h3 class="major">Mes projets scolaires</h3>
-					<form action="#app_gsb"> <!--gsb-->
-						<input class="submit" type="submit" value="Application GSB">
-						</form>
-					<form action="#app_resto"> <!-- resto -->
-						<input class="read-me" type="submit" value="Application resto">
-						</form>
-						<form action="projets/Laragon.pdf" target="_blank">  <!-- laragon -->
-							<input class="read-me" type="submit" value="Laragon">		
-						</form>
+				<form action="#app_gsb"> <!--gsb-->
+					<input class="submit" type="submit" value="Application GSB">
+				</form>
+				<form action="#app_resto"> <!-- resto -->
+					<input class="read-me" type="submit" value="Application resto">
+				</form>
+				<form action="projets/Laragon.pdf" target="_blank"> <!-- laragon -->
+					<input class="read-me" type="submit" value="Laragon">
+				</form>
 
 
 				<h3 class="major">Epreuve E4</h3>
-					<form action="projets/tableau_synthese.pdf" target="_blank">
-					<input class="read-me" type="submit" value="Tableau de Synthèse SIO">			
+				<form action="projets/tableau_synthese.pdf" target="_blank">
+					<input class="read-me" type="submit" value="Tableau de Synthèse SIO">
 			</article>
 
 			<!-- Veilles -->
 			<article id="veilles">
-				<h2 class="major">Veilles technologiques</h2>
-					<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-					<p>La veille technologique est indispensable. Elle permet d’être à jour sur tout les systèmes technologiques, ainsi que d’obtenir des informations sur les concurrents, l’actualité, etc. Cependant, la veille demande beaucoup de temps et d’investissement car des nouvelles innovations et informations apparaissent chaque jour.</p>
-				<h3 class="major">Mes veilles</h3>
-					<p> Dans le cadre de mon BTS, j'ai eu l'occasion de produire deux veilles technologiques.</p>
-					<form action="/projets/veilles/veille_xss.pdf" target="_blank">
-					<input class="read-me" type="submit" value="Veille  de première année sur les failles XSS">
-					</form>
-					<br></br>
-					<form action="images/" target="_blank">
-					<input class="read-me" type="submit" value="Veille  de deuxième année sur les CMS">
-					</form>
-				</article>
+				<div class="content">
+					<div class="inner">
+						<h2 class="major">Veilles technologiques</h2>
 
+						<p>La veille technologique est indispensable. Elle permet d’être à jour sur tout les systèmes
+							technologiques, ainsi que d’obtenir des informations sur les concurrents, l’actualité, etc.
+							Cependant, la veille demande beaucoup de temps et d’investissement car des nouvelles
+							innovations et
+							informations apparaissent chaque jour. </p>
+						<span class="image main"><img src="images/ia.jpg" alt="" /></span>
+
+						<!--	<p> Dans le cadre de mon BTS, j'ai eu l'occasion de produire deux veilles technologiques.</p>
+				<form action="/projets/veilles/veille_xss.pdf" target="_blank">
+					<input class="read-me" type="submit" value="Veille  de première année sur les failles XSS">
+				</form> -->
+
+						<h2 class="major">Les Inteligences artificielles</h2>
+						<p>L'intelligence artificielle (IA) est un processus d'imitation de l'intelligence humaine qui
+							repose sur la création et l'application d'algorithmes exécutés dans un environnement
+							informatique dynamique. Son but est de permettre à des ordinateurs de penser et d'agir comme
+							des êtres humains.</p>
+						Pour y parvenir, trois composants sont nécessaires : <br></br>
+
+						<li>Des systèmes informatiques</li>
+						<li>Des données avec des systèmes de gestion</li>
+						<li>Des algorithmes d'IA avancés (code)</li> <br>
+
+						Pour se rapprocher le plus possible du comportement humain, l'intelligence artificielle a besoin
+						d'une quantité de données et d'une capacité de traitement élevées. <br>
+						L’IA se retrouve implémentée dans un nombre grandissant de domaines d’application.<br></br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<h3 class="major">L'IA dans le domaine de la santé</h3> <!-- Ia dans la santé-->
+						<span class="image main"><img src="images/medic-ia.jpg" alt="" /></span>
+						L'intelligence artificielle (IA) joue un rôle important dans le domaine de la santé en
+						améliorant la qualité des soins et en permettant une prise de décision plus rapide et plus
+						précise.<br></br>
+						<li>Diagnostic médical : L'IA peut aider les médecins à diagnostiquer les maladies en utilisant
+							des algorithmes de reconnaissance de motifs pour analyser les images médicales, les
+							enregistrements de signes vitaux et les dossiers médicaux électroniques.</li>
+						<li>Recherche médicale : L'IA peut aider à accélérer la découverte de nouveaux médicaments et à
+							améliorer les essais cliniques en aidant à prédire les résultats et à optimiser les
+							protocoles.</li>
+						<li>Surveillance des patients : L'IA peut surveiller les patients à distance pour détecter les
+							signes de détérioration de leur état de santé et les alertes médicales appropriées.</li>
+						<li>Amélioration de l'efficacité : L'IA peut aider à optimiser les processus de soins de santé
+							en automatisant certaines tâches administratives, telles que la gestion des dossiers
+							médicaux et les tâches de codage.</li><br></br>
+
+						Bien que l'IA puisse apporter de nombreux avantages au domaine de la santé, il est important de
+						s'assurer qu'elle est utilisée de manière responsable et éthique pour éviter les risques pour la
+						vie privée et la sécurité des données. De plus, il est crucial de s'assurer que l'IA ne remplace
+						pas les soins médicaux humains et qu'elle soit utilisée pour les compléter plutôt que pour les
+						remplacer.
+
+
+						<span class="image main"><img src="images/medic-ia2.jpg" alt="" /></span>
+
+
+						<div class="video-container">
+							<iframe width="300" height="190" src="https://www.youtube.com/embed/Ut1BCR1fzv0"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+
+							<div class="video-title">
+								<a href="https://www.youtube.com/embed/Ut1BCR1fzv0">
+									<h4>Chinese hospitals deploy robots to help medical staff fight coronavirus
+										outbreak.</h4><a>
+										<p>Publié le 08/01/2021.<br>
+										South China Morning Post.</p>
+									</a>
+							</div>
+						</div>
+						<br><br>
+						<div class="video-container">
+							<img width="300" height="190" src="images/Ia_forte_faible.jpg" title="Ia forte et faible"
+								frameborder="0">
+
+							<div class="video-title">
+								<a
+									href="https://www.cscience.ca/2021/09/13/analyse-ia-forte-versus-ia-faible-pourquoi-ce-rapport-de-force/">
+									<h4> Tout savoir sur les IA fortes et faibles.</h4>
+									</p><a>
+										<p>Publié le 13/09/2021.<br>
+										CScience.</p>
+									</a>
+							</div>
+						</div>
+					</div>
+					<br><br>
+					<div class="video-container">
+						<img width="300" height="190" src="images/robot_ia.jpg" title="Ia forte et faible"
+							frameborder="0">
+
+						<div class="video-title">
+							<a href="https://lejournal.cnrs.fr/nos-blogs/de-la-decouverte-a-linnovation/une-nouvelle-generation-de-robots-chirurgiens-prete-a">
+								<h4> Une nouvelle génération de robots chirurgiens prête à éclore.</h4>
+								</p><a>
+									<p>Publié le 12/01/2023.<br>
+									CNRS Le Journal.</p>
+								</a>
+						</div>
+					</div>
+
+
+
+			</article>
 
 
 
@@ -186,7 +357,7 @@
 							<input type="text" name="name" id="name" />
 						</div>
 						<div class="field half">
-							<label for="email">Email</label> 
+							<label for="email">Email</label>
 							<input type="text" name="email" id="email" />
 						</div>
 						<div class="field">
@@ -202,8 +373,8 @@
 				<ul class="icons">
 					<li><a href="https://www.linkedin.com/in/hella-naceur-b04783226/"
 							class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-					<li><a href="mailto:hella.naceur@gmail.com" 
-						class="icon brands fa-google"><span class="label">Google</span></a></li>
+					<li><a href="mailto:hella.naceur@gmail.com" class="icon brands fa-google"><span
+								class="label">Google</span></a></li>
 				</ul>
 			</article>
 
@@ -211,54 +382,55 @@
 			<!-- Certifications -->
 			<article id="certifs">
 				<h2 class="major">Certifications</h2>
-				<span class="image main"><img src="images/metaloader.gif" alt="" /></span>
-				<p>Certification en cours d'acquisition !<br></br>
-					ruby vs php 
-				</p>
+				<p>Certification Sololearn : PHP en cours d'acquisition !</p>
+				<img src="images/icon.png" style="width:50%; height:60%;" alt="Sololearn">
+
 
 			</article>
 
 			<!-- GSB -->
 			<article id="app_gsb">
-			<div class="onglet">
-				<h2 class="major">Application GSB</h2>
-				<span class="image main"><img src="images/gsb.jpg" alt="" /></span>
-				<p>Le contexte GSB est un projet de groupe réalisé au sein du BTS SIO durant les deux années de formation. Ce contexte se divise en plusieurs activités dans lesquelles les étudiants sont considérés comme prestataires de service.</p>
+				<div class="onglet">
+					<h2 class="major">Application GSB</h2>
+					<span class="image main"><img src="images/gsb.jpg" alt="" /></span>
+					<p>Le contexte GSB est un projet de groupe réalisé au sein du BTS SIO durant les deux années de
+						formation. Ce contexte se divise en plusieurs activités dans lesquelles les étudiants sont
+						considérés comme prestataires de service.</p>
 					<li class="projets">Connexion du comptable</li>
-					<img class="projets" src="images/gsb/gsb2.png"/>
+					<img class="projets" src="images/gsb/gsb2.png" />
 					<li class="projets">Séparation visiteur comptable</li>
-					<img class="projets" src="images/gsb/gsb3.png"/>
+					<img class="projets" src="images/gsb/gsb3.png" />
 					<br></br>
-					<img class="projets" src="images/gsb/gsb5.png"/>
+					<img class="projets" src="images/gsb/gsb5.png" />
 					<br></br>
-					<img class="projets" src="images/gsb/gsb8.png"/>
+					<img class="projets" src="images/gsb/gsb8.png" />
 					<br></br>
-					<img class="projets" src="images/gsb/gsb4.png"/>
+					<img class="projets" src="images/gsb/gsb4.png" />
 					<br></br>
-					<img class="projets" src="images/gsb/gsb6.png"/>
+					<img class="projets" src="images/gsb/gsb6.png" />
 					<br></br>
-					<img class="projets" src="images/gsb/gsb9.png"/>
+					<img class="projets" src="images/gsb/gsb9.png" />
 					<li class="projets">Validation des fiches de frais</li>
-					<img class="projets" src="images/gsb/gsb10.png"/>
+					<img class="projets" src="images/gsb/gsb10.png" />
 					<li class="projets">(Vue comptable)</li>
-					<img class="projets" src="images/gsb/gsb11.png"/>
+					<img class="projets" src="images/gsb/gsb11.png" />
 					<li class="projets">(Vue visiteur)</li>
-					<img class="projets" src="images/gsb/gsb12.png"/>
+					<img class="projets" src="images/gsb/gsb12.png" />
 					<br></br>
-					<img class="projets" src="images/gsb/gsb13.png"/>
+					<img class="projets" src="images/gsb/gsb13.png" />
 					<br></br>
-					<img class="projets" src="images/gsb/gsb14.png"/>
+					<img class="projets" src="images/gsb/gsb14.png" />
 					<br></br>
-					<img class="projets" src="images/gsb/gsb15.png"/>
+					<img class="projets" src="images/gsb/gsb15.png" />
 					<li class="projets">Suivi des fiches de frais</li>
-					<img class="projets" src="images/gsb/gsb16.png"/>
+					<img class="projets" src="images/gsb/gsb16.png" />
 					<br></br>
-					<img class="projets" src="images/gsb/gsb17.png"/>
+					<img class="projets" src="images/gsb/gsb17.png" />
 					<br></br>
-					<img class="projets" src="images/gsb/gsb18.png"/>
+					<img class="projets" src="images/gsb/gsb18.png" />
 					<br></br>
-					<img class="projets" src="images/gsb/gsb19.png"/>
-			</div>
+					<img class="projets" src="images/gsb/gsb19.png" />
+				</div>
 			</article>
 
 
@@ -269,96 +441,98 @@
 			<!-- Resto/R3sto -->
 			<article id="app_resto">
 				<div class="onglet">
-				<h2 class="major">Application R3sto</h2>
-				<span class="image main"><img src="images/resto/resto.png" alt="" /></span>
-				<p>Le contexte de l'application R3sto est un projet de groupe réalisé au sein du BTS SIO durant les deux années de formation. Ce contexte se divise en plusieurs activités dans lesquelles les étudiants sont considérés comme prestataires de service.</p>
+					<h2 class="major">Application R3sto</h2>
+					<span class="image main"><img src="images/resto/resto.png" alt="" /></span>
+					<p>Le contexte de l'application R3sto est un projet de groupe réalisé au sein du BTS SIO durant les
+						deux années de formation. Ce contexte se divise en plusieurs activités dans lesquelles les
+						étudiants sont considérés comme prestataires de service.</p>
 					<li class="projets">Fonction connexion</li>
-					<img class="projets" src="images/resto/resto2.png"/>
+					<img class="projets" src="images/resto/resto2.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto3.png"/>
+					<img class="projets" src="images/resto/resto3.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto1.png"/>
+					<img class="projets" src="images/resto/resto1.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto4.png"/>
+					<img class="projets" src="images/resto/resto4.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto5.png"/>
+					<img class="projets" src="images/resto/resto5.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto6.png"/>
+					<img class="projets" src="images/resto/resto6.png" />
 					<li class="projets">Fonction déconnexion</li>
-					<img class="projets" src="images/resto/resto11.png"/>
+					<img class="projets" src="images/resto/resto11.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto8.png"/>
+					<img class="projets" src="images/resto/resto8.png" />
 					<li class="projets">Fonctions recherche</li>
-					<img class="projets" src="images/resto/resto10.png"/>
+					<img class="projets" src="images/resto/resto10.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto12.png"/>
+					<img class="projets" src="images/resto/resto12.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto13.png"/>
+					<img class="projets" src="images/resto/resto13.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto9.png"/>
+					<img class="projets" src="images/resto/resto9.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto14.png"/>
+					<img class="projets" src="images/resto/resto14.png" />
 					<li class="projets">Vue liste resto</li>
-					<img class="projets" src="images/resto/resto16.png"/>
+					<img class="projets" src="images/resto/resto16.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto18.png"/>
+					<img class="projets" src="images/resto/resto18.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto17.png"/>
+					<img class="projets" src="images/resto/resto17.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto15.png"/>
+					<img class="projets" src="images/resto/resto15.png" />
 					<li class="projets">Vérification de la connexion</li>
-					<img class="projets" src="images/resto/resto19.png"/>
+					<img class="projets" src="images/resto/resto19.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto11.png"/>
+					<img class="projets" src="images/resto/resto11.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto20.png"/>
+					<img class="projets" src="images/resto/resto20.png" />
 					<li class="projets">Affichage dynamique</li>
-					<img class="projets" src="images/resto/resto21.png"/>
+					<img class="projets" src="images/resto/resto21.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto22.png"/>
+					<img class="projets" src="images/resto/resto22.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto23.png"/>
+					<img class="projets" src="images/resto/resto23.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto24.png"/>
+					<img class="projets" src="images/resto/resto24.png" />
 					<li class="projets">Fonction aimer resto</li>
-					<img class="projets" src="images/resto/resto26.png"/>
+					<img class="projets" src="images/resto/resto26.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto27.png"/>
+					<img class="projets" src="images/resto/resto27.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto28.png"/>
+					<img class="projets" src="images/resto/resto28.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto29.png"/>
+					<img class="projets" src="images/resto/resto29.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto25.png"/>
+					<img class="projets" src="images/resto/resto25.png" />
 					<br></br>
 					<li class="projets">Critiques</li>
-					<img class="projets" src="images/resto/resto30.png"/>
+					<img class="projets" src="images/resto/resto30.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto38.png"/>
+					<img class="projets" src="images/resto/resto38.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto31.png"/>
+					<img class="projets" src="images/resto/resto31.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto32.png"/>
+					<img class="projets" src="images/resto/resto32.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto33.png"/>
+					<img class="projets" src="images/resto/resto33.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto35.png"/>
+					<img class="projets" src="images/resto/resto35.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto34.png"/>
+					<img class="projets" src="images/resto/resto34.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto36.png"/>
+					<img class="projets" src="images/resto/resto36.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto37.png"/>
+					<img class="projets" src="images/resto/resto37.png" />
 					<li class="projets">CGU</li>
-					<img class="projets" src="images/resto/resto11.png"/>
+					<img class="projets" src="images/resto/resto11.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto20.png"/>
+					<img class="projets" src="images/resto/resto20.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto39.png"/>
+					<img class="projets" src="images/resto/resto39.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto40.png"/>
+					<img class="projets" src="images/resto/resto40.png" />
 					<br></br>
-					<img class="projets" src="images/resto/resto41.png"/>
+					<img class="projets" src="images/resto/resto41.png" />
 				</div>
 			</article>
 
@@ -387,6 +561,7 @@
 	<script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
 
 <!-- Cursus
